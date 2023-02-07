@@ -13,9 +13,9 @@ import time
 df1=pd.read_csv(r'ant-1.3.csv',header=0)
 df2=pd.read_csv(r'ant-1.4.csv',header=0)
 #训练集测试集
-x_train=df1.iloc[:,0:19].values
+x_train=df1.iloc[:,0:20].values
 y_train=df1.iloc[:,20].values
-x_test=df2.iloc[:,0:19].values
+x_test=df2.iloc[:,0:20].values
 y_true=df2.iloc[:,20].values
 #参数空间
 space={'min_samples_split':hp.uniform('min_samples_split',0.1,1.0),
